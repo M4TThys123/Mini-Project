@@ -4,7 +4,7 @@
 # Logs
 logs
 *.log
-npm-debug.log*
+npm-ebug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
