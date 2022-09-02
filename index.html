@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini-Project</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <body>
       <section>
         <nav>
-          <img src="./afb/FES.svg" alt="Frontend Simplified Logo" />
+          <img
+            src="./afb/FES.svg"
+            alt="Frontend Simplified Logo"
+            class="logo"
+          />
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#discord">Discord</a></li>
@@ -19,73 +24,74 @@
         </nav>
 
         <header>
-          <div>
-            <h1>Best place to learn frontend</h1>
-            <p>
-              Go from being an absolute beginner to a pro with a simplified...
-            </p>
-            <button>Start now</button>
+          <div class="row">
+            <div>
+              <h1>Best place to learn frontend</h1>
+              <p class="subheader">
+                Go from being an absolute beginner to a pro with a simplified...
+              </p>
+              <button>Start now</button>
+            </div>
+            <figure>
+              <img src="./afb/laptop.png" alt="Image of a laptop" />
+            </figure>
           </div>
-          <figure>
-            <img src="./afb/laptop.png" alt="Image of a laptop" />
-          </figure>
         </header>
       </section>
 
       <main>
-        <section class="about">
+        <section class="about " id="about">
           <h2>About</h2>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur tempore veniam nostrum temporibus doloribus, dolores
-              inventore. Eveniet laboriosam magni blanditiis explicabo. Quidem
-              ipsum nostrum sed iste,
-            </p>
-            <p>
-              tempore veniam nostrum temporibus doloribus, dolores inventore.
-              Eveniet laboriosam magni blanditiis explicabo. Quidem ipsum
-              nostrum sed iste, saepe fugiat natus hic.
-            </p>
+          <div class="section__discription">
+            <div class="section__discription--wrapper">
+              <p class="section__discription--para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumque nisi! Eum aspernatur officia aut voluptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam? 
+              </p>
+              <p class="section__discription--para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumque nisi! Eum aspernatur officia aut voluptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam? 
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./afb/about.jpg" alt="About img" />
+            </figure>
           </div>
-          <figure>
-            <img src="./afb/about.jpg" alt="About img" />
-          </figure>
         </section>
 
-        <section class="discord">
+        <section id="discord" class="">
           <h2>Discord</h2>
-          <figure>
+          <div class="section__discription">
+          <figure  class="about__img--wrapper">
             <img src="./afb/discord.png" alt="Discord img" />
           </figure>
-          <div>
-            <p>
+          <div class="section__discription--wrapper">
+            <p class="section__discription--para">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur tempore veniam nostrum temporibus doloribus, dolores
               inventore. Eveniet laboriosam magni blanditiis explicabo. Quidem
               ipsum nostrum sed iste,
             </p>
-            <p>
+            <p class="section__discription--para">
               tempore veniam nostrum temporibus doloribus, dolores inventore.
               Eveniet laboriosam magni blanditiis explicabo. Quidem ipsum
               nostrum sed iste, saepe fugiat natus hic.
             </p>
           </div>
+        </div>
         </section>
         <section id="contact">
-          <h2></h2>
+          <h2>Contact</h2>
           <form action="">
-            <span></span>
-            <input type="text" />
-            <span></span>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button></button>
+            <span>Email</span>
+            <input type="email"  placeholder="matthijs@voorbeeld.nl"/>
+            <span>Message</span>
+            <textarea type="text" placeholder="Coole website, laten we contact leggen!" name="" id="" cols="30" rows="10"></textarea>
+            <button>Contact us!</button>
           </form>
         </section>
       </main>
 
       <footer>
-        <img src="./afb/FES.svg" alt="Frontend Simplified logo" />
+        <img src="./afb/FES.svg" alt="Frontend Simplified logo" class="footer__logo`" />
         <div class="footer__links">
           <a href="#about" class="footer__link">About</a>
           <a href="#discord" class="footer__link">Discord</a>
